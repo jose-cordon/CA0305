@@ -25,4 +25,9 @@ dygraph(sample.xts)
 ```
 
 
+```{r}
+for (x in 1:10){
+  print(x-1)
+}
+```
 
