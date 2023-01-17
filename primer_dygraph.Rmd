@@ -1,0 +1,28 @@
+---
+title: "Proyecto de ejemplo"
+author: "José Alberto Cordón Camacho"
+date: "2023-01-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r cars}
+library(dygraphs)
+library(xts)
+```
+```{r}
+data(sample_matrix)
+sample.xts <- as.xts(sample_matrix, descr='my new xts object')
+```
+
+```{r}
+dygraph(sample.xts)
+```
+
+
+
